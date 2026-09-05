@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Awareness Program</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h2>🛡️ PhishGuard</h2>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#phishing">What is Phishing?</a></li>
+                <li><a href="#warning">Warning Signs</a></li>
+                <li><a href="#safety">Safety Tips</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <p class="tagline">CYBERSECURITY AWARENESS</p>
+            <h1>Think Before<br>You Click.</h1>
+            <p>
+                Learn how to identify phishing emails, fake login pages,
+                fraudulent websites and social engineering attacks.
+            </p>
+            <a href="#phishing" class="btn">Start Learning →</a>
+        </div>
+
+        <div class="hero-icon">
+            🛡️
+        </div>
+    </section>
+
+    <section id="phishing" class="section">
+        <p class="section-label">01 — UNDERSTAND</p>
+        <h2>What is Phishing?</h2>
+
+        <p class="description">
+            Phishing is a cyberattack where criminals pretend to be
+            trustworthy people or organizations to trick users into
+            revealing sensitive information such as passwords, OTPs
+            or financial details.
+        </p>
+
+        <div class="cards">
+            <div class="card">
+                <span>📧</span>
+                <h3>Phishing Emails</h3>
+                <p>
+                    Fake emails designed to make you click malicious
+                    links or open harmful attachments.
+                </p>
+            </div>
+
+            <div class="card">
+                <span>🌐</span>
+                <h3>Fake Websites</h3>
+                <p>
+                    Websites that imitate legitimate services to
+                    steal usernames, passwords or other information.
+                </p>
+            </div>
+
+            <div class="card">
+                <span>📱</span>
+                <h3>Smishing</h3>
+                <p>
+                    Phishing attacks delivered through SMS or
+                    messaging applications.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="warning" class="section alternate">
+        <p class="section-label">02 — IDENTIFY</p>
+        <h2>Spot the Warning Signs 🔍</h2>
+
+        <div class="warning-grid">
+            <div class="warning-item">
+                <strong>⚠️ Urgent Messages</strong>
+                <p>Messages that pressure you to act immediately.</p>
+            </div>
+
+            <div class="warning-item">
+                <strong>🔗 Suspicious Links</strong>
+                <p>Links with unusual domains or misspelled website names.</p>
+            </div>
+
+            <div class="warning-item">
+                <strong>👤 Unknown Sender</strong>
+                <p>Emails or messages from unexpected or unfamiliar senders.</p>
+            </div>
+
+            <div class="warning-item">
+                <strong>🔑 Password Requests</strong>
+                <p>Legitimate organizations generally do not ask for your password through email or messages.</p>
+            </div>
+
+            <div class="warning-item">
+                <strong>📎 Unexpected Attachments</strong>
+                <p>Be careful with files you were not expecting.</p>
+            </div>
+
+            <div class="warning-item">
+                <strong>🎁 Too Good to Be True</strong>
+                <p>Fake prizes, rewards and offers can be used as bait.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <p class="section-label">03 — SOCIAL ENGINEERING</p>
+        <h2>How Attackers Manipulate People 🧠</h2>
+
+        <div class="cards">
+            <div class="card">
+                <span>⏰</span>
+                <h3>Urgency</h3>
+                <p>Creating pressure so victims act without thinking.</p>
+            </div>
+
+            <div class="card">
+                <span>😨</span>
+                <h3>Fear</h3>
+                <p>Threatening account suspension or other consequences.</p>
+            </div>
+
+            <div class="card">
+                <span>🎁</span>
+                <h3>Rewards</h3>
+                <p>Offering fake prizes, discounts or rewards.</p>
+            </div>
+
+            <div class="card">
+                <span>🎭</span>
+                <h3>Impersonation</h3>
+                <p>Pretending to be a bank, company, teacher or friend.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="safety" class="section alternate">
+        <p class="section-label">04 — PROTECT YOURSELF</p>
+        <h2>Stay Safe Online 🛡️</h2>
+
+        <div class="safety-list">
+            <div>✅ Verify the sender before responding.</div>
+            <div>✅ Check website addresses carefully.</div>
+            <div>✅ Never share passwords or OTPs.</div>
+            <div>✅ Enable Multi-Factor Authentication (MFA).</div>
+            <div>✅ Avoid clicking unexpected links or attachments.</div>
+            <div>✅ Report suspicious messages to the appropriate service.</div>
+        </div>
+    </section>
+
+    <section id="quiz" class="section quiz-section">
+        <p class="section-label">05 — TEST YOUR KNOWLEDGE</p>
+        <h2>Quick Phishing Quiz 🧩</h2>
+
+        <div class="quiz-box">
+            <h3>
+                You receive an email saying:
+                "Your account will be blocked soon.
+                Click here immediately."
+            </h3>
+
+            <p>What should you do?</p>
+
+            <button onclick="checkAnswer(false)">
+                A. Click the link immediately
+            </button>
+
+            <button onclick="checkAnswer(true)">
+                B. Verify the message through the official website
+            </button>
+
+            <button onclick="checkAnswer(false)">
+                C. Reply with your password
+            </button>
+
+            <button onclick="checkAnswer(false)">
+                D. Forward it to everyone
+            </button>
+
+            <p id="quiz-result"></p>
+        </div>
+    </section>
+
+    <section class="final-message">
+        <h2>STOP → THINK → VERIFY → CLICK</h2>
+        <p>A few seconds of caution can protect your personal information.</p>
+    </section>
+
+    <footer>
+        <p>© 2026 PhishGuard | Phishing Awareness Program</p>
+        <p>Cybersecurity Internship — Task 2</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
